@@ -1,0 +1,4 @@
+# Reglas del analizador de Dart (revisa errores y buenas prácticas).
+analyzer:
+  exclude:
+    - build/**

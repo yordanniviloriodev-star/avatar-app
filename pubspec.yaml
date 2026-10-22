@@ -1,0 +1,32 @@
+# pubspec.yaml = la "ficha técnica" del proyecto Flutter.
+# Aquí se declara el nombre, la versión, las librerías (paquetes) que usamos
+# y los archivos (imágenes) que van empaquetados dentro del APK.
+name: avatar_app
+description: "App dedicada a Avatar: La Leyenda de Aang - Tarea 5 de Desarrollo Móvil (ITLA)."
+publish_to: 'none' # no se publica en pub.dev, es una app privada
+
+# versión visible (1.0.0) + número de compilación (+1)
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Reproduce videos de YouTube DENTRO de la app (en un WebView incrustado),
+  # sin abrir la app de YouTube ni el navegador.
+  youtube_player_iframe: ^6.0.2
+  # Abre enlaces externos: WhatsApp, correo y GitHub en la vista Contrátame.
+  url_launcher: ^6.3.1
+  # Guarda datos pequeños en el teléfono: lo usamos para el récord del juego.
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true # habilita los íconos de Material (Icons.xxx)
+  assets:
+    - assets/images/ # todas las imágenes de esta carpeta van dentro del APK
